@@ -109,6 +109,6 @@ fn main() {
             std::process::exit(0);
         }
 
-        _ => unimplemented!("Command not implemented"),
+        _ => unimplemented!("Command not implemented."),
     }
 }
