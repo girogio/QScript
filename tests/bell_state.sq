@@ -1,0 +1,15 @@
+// Bell State Example
+
+qbit q1, q2;
+
+circuit bell_state(qbit a, qbit b) {
+    H(a);
+    CNOT(a, b);
+}
+
+bell_state(q1, q2);
+
+bit c1, c2;
+
+measure q1 -> c1;
+measure q2 -> c2;
